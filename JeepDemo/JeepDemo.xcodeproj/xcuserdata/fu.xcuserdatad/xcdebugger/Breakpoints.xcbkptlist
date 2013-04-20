@@ -1186,5 +1186,18 @@
          landmarkName = "-SaoQRcode"
          landmarkType = "5">
       </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Classes/Test.m"
+         timestampString = "388144285.850611"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "1570"
+         endingLineNumber = "1570"
+         landmarkName = "-MytimeForThreadCheckNet:"
+         landmarkType = "5">
+      </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

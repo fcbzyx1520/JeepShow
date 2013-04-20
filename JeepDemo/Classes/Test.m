@@ -426,7 +426,7 @@ for (NSManagedObject *oneObject in objects)
 {
  NSString *Moblie=@"^1(3[0-9]|5[0-35-9]|8[025-9])\\d{8}$";
   //移动
- NSString *CM=@"^1(34[0-8]|(3[5-9]|5[017-9]|8[278])\\d)\\d{7}$";
+ NSString *CM=@"^1(34[0-8]|(3[5-9]|5[017-9]|8[1278])\\d)\\d{7}$";
 //联通
 NSString *CU=@"^1(3[0-2]|5[256]|8[56])\\d{8}$";
   //电信
@@ -1453,7 +1453,7 @@ Reachability *rb=[Reachability reachabilityWithHostName:@"www.apple.com"];
            [[[custmerMode GetValueforCity] stringByReplacingOccurrencesOfString:@" " withString:@""] compare:tempcbx]==NSOrderedSame||
            [[custmerMode GetValueforPhone] compare:tempempty]==NSOrderedSame||
            [[[custmerMode GetValueforProvien] stringByReplacingOccurrencesOfString:@" " withString:@""] compare:tempcbx]==NSOrderedSame||
-           [[custmerMode GetValueforSex] compare:tempempty]==NSOrderedSame||![[self.dic allKeys] containsObject:@"first group"])
+           [[custmerMode GetValueforSex] compare:tempempty]==NSOrderedSame||![[self.dic allKeys] containsObject:@"first group"]||[[custmerMode GetValueforQ2] compare:tempempty]==NSOrderedSame||[[custmerMode GetValueforQ3] compare:tempempty]==NSOrderedSame)
         {
             UIAlertView *alert = [[UIAlertView alloc] 
                                   initWithTitle:@"提示" 
@@ -1599,7 +1599,7 @@ case 2:
      [[[custmerMode GetValueforCity] stringByReplacingOccurrencesOfString:@" " withString:@""] compare:tempcbx]==NSOrderedSame||
      [[custmerMode GetValueforPhone] compare:tempempty]==NSOrderedSame||
      [[[custmerMode GetValueforProvien] stringByReplacingOccurrencesOfString:@" " withString:@""] compare:tempcbx]==NSOrderedSame||
-     [[custmerMode GetValueforSex] compare:tempempty]==NSOrderedSame||![[self.dic allKeys] containsObject:@"first group"])
+     [[custmerMode GetValueforSex] compare:tempempty]==NSOrderedSame||![[self.dic allKeys] containsObject:@"first group"]||[[custmerMode GetValueforQ2] compare:tempempty]==NSOrderedSame||[[custmerMode GetValueforQ3] compare:tempempty]==NSOrderedSame)
      {
      UIAlertView *alert = [[UIAlertView alloc] 
      initWithTitle:@"提示" 
