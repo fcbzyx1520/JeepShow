@@ -2567,7 +2567,6 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 			//cbxcompony.titleLabel.text=[cellcustomerMode GetValueforQ3];
 			//custmerMode=cellcustomerMode; 
 			
-    
              for (RadioButton *rba in [dicrbvalue allValues])
 			{
 				[rba setChecked:NO];
