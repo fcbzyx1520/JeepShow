@@ -487,6 +487,13 @@ else
 	   [[[custmerMode GetValueforProvien] stringByReplacingOccurrencesOfString:@" " withString:@""] compare:tempcbx]==NSOrderedSame&&[[custmerMode GetValueforEmail] compare:tempempty]==NSOrderedSame&&
 	   [[custmerMode GetValueforQ3]  compare:tempempty]==NSOrderedSame&&[[custmerMode GetValueforSex] compare:tempempty]==NSOrderedSame)
 	{
+        NSMutableArray *array13 = [[NSMutableArray alloc] init];
+        self.tableArray=[[NSArray alloc] initWithArray:array13];
+        [array13 release];
+        
+        //if([self.tableArray count]>0)        
+		[self.tableView1 reloadData];
+    	[self.tableView2 reloadData];
 		sc1.selectedSegmentIndex=0;
 	    [[self view] bringSubviewToFront:view1];
 		[self dismissModalViewControllerAnimated:YES];
@@ -527,6 +534,13 @@ else
     {
 	if(IsExitAlert==1)
     {
+        NSMutableArray *array14 = [[NSMutableArray alloc] init];
+        self.tableArray=[[NSArray alloc] initWithArray:array14];
+        [array14 release];
+        
+        //if([self.tableArray count]>0)        
+		[self.tableView1 reloadData];
+    	[self.tableView2 reloadData];
         sc1.selectedSegmentIndex=0;
 	    [[self view] bringSubviewToFront:view1];
 		[self dismissModalViewControllerAnimated:YES];
@@ -557,6 +571,13 @@ else
 
 }
 - (IBAction)switchViews:(id)sender{
+    NSMutableArray *array12 = [[NSMutableArray alloc] init];
+    self.tableArray=[[NSArray alloc] initWithArray:array12];
+	[array12 release];
+    
+        //if([self.tableArray count]>0)        
+		[self.tableView1 reloadData];
+    	[self.tableView2 reloadData];
 	if([sender selectedSegmentIndex]==0)
 	{
 		//[self.view addSubview:view1];
@@ -2536,7 +2557,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
             NSString *tempcbx=@"请选择";
             if([[[cellcustomerMode GetValueforQ3] stringByReplacingOccurrencesOfString:@" " withString:@""] compare:tempcbx]==NSOrderedSame)
             {
-                cbxcompony.titleLabel.text=@"                请选择      ";
+                cbxcompony.titleLabel.text=@"                请选择     ";
             }
             else {
                
@@ -2559,7 +2580,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
             if([[cellcustomerMode GetValueforIskeyi] compare:iskeyi1]!=NSOrderedSame)
             {
             if([[cellcustomerMode GetValueforIskeyi] compare:@"1"]==NSOrderedSame)
-            {
+            { 
                 iskeyi1=@"是";
             }
             
