@@ -1474,7 +1474,7 @@ Reachability *rb=[Reachability reachabilityWithHostName:@"www.apple.com"];
            [[[custmerMode GetValueforCity] stringByReplacingOccurrencesOfString:@" " withString:@""] compare:tempcbx]==NSOrderedSame||
            [[custmerMode GetValueforPhone] compare:tempempty]==NSOrderedSame||
            [[[custmerMode GetValueforProvien] stringByReplacingOccurrencesOfString:@" " withString:@""] compare:tempcbx]==NSOrderedSame||
-           [[custmerMode GetValueforSex] compare:tempempty]==NSOrderedSame||![[self.dic allKeys] containsObject:@"first group"]||[[custmerMode GetValueforQ2] compare:tempempty]==NSOrderedSame||[[custmerMode GetValueforQ3] compare:tempempty]==NSOrderedSame)
+           [[custmerMode GetValueforSex] compare:tempempty]==NSOrderedSame||![[self.dic allKeys] containsObject:@"first group"]||[[custmerMode GetValueforQ2] compare:tempempty]==NSOrderedSame||[[[custmerMode GetValueforQ3] stringByReplacingOccurrencesOfString:@" " withString:@""]compare:tempempty]==NSOrderedSame||[[[custmerMode GetValueforQ3] stringByReplacingOccurrencesOfString:@" " withString:@""]compare:tempcbx]==NSOrderedSame)
         {
             UIAlertView *alert = [[UIAlertView alloc] 
                                   initWithTitle:@"提示" 
@@ -1620,7 +1620,7 @@ case 2:
      [[[custmerMode GetValueforCity] stringByReplacingOccurrencesOfString:@" " withString:@""] compare:tempcbx]==NSOrderedSame||
      [[custmerMode GetValueforPhone] compare:tempempty]==NSOrderedSame||
      [[[custmerMode GetValueforProvien] stringByReplacingOccurrencesOfString:@" " withString:@""] compare:tempcbx]==NSOrderedSame||
-     [[custmerMode GetValueforSex] compare:tempempty]==NSOrderedSame||![[self.dic allKeys] containsObject:@"first group"]||[[custmerMode GetValueforQ2] compare:tempempty]==NSOrderedSame||[[custmerMode GetValueforQ3] compare:tempempty]==NSOrderedSame)
+     [[custmerMode GetValueforSex] compare:tempempty]==NSOrderedSame||![[self.dic allKeys] containsObject:@"first group"]||[[custmerMode GetValueforQ2] compare:tempempty]==NSOrderedSame||[[[custmerMode GetValueforQ3] stringByReplacingOccurrencesOfString:@" " withString:@""]compare:tempempty]==NSOrderedSame||[[[custmerMode GetValueforQ3] stringByReplacingOccurrencesOfString:@" " withString:@""]compare:tempcbx]==NSOrderedSame)
      {
      UIAlertView *alert = [[UIAlertView alloc] 
      initWithTitle:@"提示" 
